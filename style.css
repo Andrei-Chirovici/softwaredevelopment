@@ -37,6 +37,9 @@ h1 {
 }
 
 h2 {
- color: blue;
-    
+ color: blue;   
+}
+
+body {
+    background-color: lightblue;
 }
