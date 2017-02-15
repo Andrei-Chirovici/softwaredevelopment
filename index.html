@@ -1,5 +1,22 @@
 <head>
-  <h1>Software Development Methodologies</h1>
+  <script>
+    function randomize() {
+  if(!alt){
+    int_ = setInterval(randomColors, 500);
+  } else {
+    clearInterval(int_)
+  }
+  alt = !alt;
+}
+function randomColors() {
+  var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  document.getElementById('p1').style.color=color;
+}
+var alt = false
+var int_;
+  </script>
+  <button style="width:110px;height:40px;font-size:18px;" id="b1" onclick="randomize()"><b>Click Me!</b></button>
+  <h1 class="header" id="p1">Software Development Methodologies</h1>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
